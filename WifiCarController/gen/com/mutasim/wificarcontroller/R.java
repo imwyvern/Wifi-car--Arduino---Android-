@@ -42,21 +42,21 @@ public final class R {
         public static final int joystickView=0x7f080010;
         public static final int lig=0x7f080018;
         public static final int lin_lay=0x7f080000;
-        public static final int logo=0x7f080002;
+        public static final int logo=0x7f08000c;
         public static final int slidingDrawer=0x7f080015;
-        public static final int t0=0x7f080001;
-        public static final int t1=0x7f080003;
-        public static final int t10=0x7f08000c;
-        public static final int t11=0x7f08000e;
-        public static final int t12=0x7f080005;
-        public static final int t2=0x7f080004;
-        public static final int t3=0x7f080006;
-        public static final int t4=0x7f080007;
-        public static final int t5=0x7f080009;
-        public static final int t6=0x7f080008;
-        public static final int t7=0x7f08000a;
-        public static final int t8=0x7f08000b;
-        public static final int t9=0x7f08000d;
+        public static final int t0=0x7f08000b;
+        public static final int t1=0x7f080001;
+        public static final int t10=0x7f08000e;
+        public static final int t11=0x7f08000a;
+        public static final int t12=0x7f080003;
+        public static final int t2=0x7f080002;
+        public static final int t3=0x7f080004;
+        public static final int t4=0x7f080005;
+        public static final int t5=0x7f080007;
+        public static final int t6=0x7f080006;
+        public static final int t7=0x7f080008;
+        public static final int t8=0x7f08000d;
+        public static final int t9=0x7f080009;
         public static final int tb=0x7f080019;
     }
     public static final class layout {

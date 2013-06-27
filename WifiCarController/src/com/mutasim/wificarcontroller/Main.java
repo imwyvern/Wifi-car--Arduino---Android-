@@ -4,6 +4,7 @@ import com.mutasim.wificarcontroller.JoystickMovedListener;
 import com.mutasim.wificarcontroller.JoystickView;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
@@ -12,6 +13,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
+
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -150,18 +153,35 @@ public class Main extends Activity {
     Button.OnClickListener buttonConnectOnClickListener = new Button.OnClickListener(){
 		@Override
 		public void onClick(View arg0) {
+	
 			connectivity = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+			
 			wifiInfo = connectivity.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+			
 			if (wifiInfo.isConnected()) {
+		
 			if(!connected){
-				 try {socket = new Socket("192.168.1.120", 55555);
+				 Log.v("test4","test4");
 				 Toast msg = Toast.makeText(Main.this,
                  "Connected Successfully", Toast.LENGTH_LONG);
 				 msg.show();
-					  dataOutputStream = new DataOutputStream(socket.getOutputStream());
-					  changeConnectionStatus(true);} 
+				 new AsyncLoader().execute((Void)null); 
+				   changeConnectionStatus(true);
+				/*
+				 try {
+					// socket = new Socket("192.168.1.1", 2001);
+				 Log.v("test4","test4");
+				 Toast msg = Toast.makeText(Main.this,
+                 "Connected Successfully", Toast.LENGTH_LONG);
+				 msg.show();
+				 
+				 socket = new Socket("192.168.1.1", 2001);
+					   dataOutputStream = new DataOutputStream(socket.getOutputStream());
+					   changeConnectionStatus(true);
+					  } 
 				 catch (UnknownHostException e) {changeConnectionStatus(false);} 
-				 catch (IOException e) {changeConnectionStatus(false);}}
+				 catch (IOException e) {changeConnectionStatus(false);}
+				 */}
 			else{
 				try {socket.close();
 				Toast msg = Toast.makeText(Main.this,
@@ -200,5 +220,22 @@ public class Main extends Activity {
 		tb.setVisibility(View.INVISIBLE);
 		lig.setVisibility(View.INVISIBLE);
 		}}
+	class AsyncLoader extends AsyncTask<Void, Void,Void>{ 
+		@Override 
+		protected Void doInBackground(Void... params) { 
+			 try {
+				 Log.v("test5","test5");
+				 socket = new Socket("192.168.1.1", 2001);
+				 Log.v("test6","test6");
+					   dataOutputStream = new DataOutputStream(socket.getOutputStream());
+						 Log.v("test7","test7");
+					  // changeConnectionStatus(true);
+					   Log.v("test8","test8");
+					  } 
+				 catch (UnknownHostException e) {changeConnectionStatus(false);} 
+				 catch (IOException e) {changeConnectionStatus(false);}
+		return null; 
+		} 
+		} 
 }
 

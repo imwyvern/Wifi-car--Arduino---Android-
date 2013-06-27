@@ -7,24 +7,10 @@
      android:id="@+id/lin_lay"
     android:gravity="center"
     android:orientation="vertical" >
-   
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="PROJECT TEAM"
-        android:id="@+id/t0"
-        android:textColor="#ffffff"
-        android:textSize="30px" />
    <TableRow
     android:layout_width="wrap_content"
     android:layout_height="5px"
     />
-    <ImageView
-        android:layout_width="200dip"
-        android:layout_height="200dip"
-        android:id="@+id/logo"
-        android:background="@drawable/img" />
 
 <TableLayout 
             android:layout_width="wrap_content"
@@ -37,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:id="@+id/t1"
-        android:text="Leader"
+        android:text=""
         android:textColor="#ffffff"
         android:textSize="20px" />
     </TableRow>
@@ -47,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="Dr.Zeng Yujiang (曾喻江) "
+        android:text=" "
         android:textColor="#ffffff"
         android:textSize="15px" />
    </TableRow>
@@ -57,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="zengyj@mail.hust.edu.cn"
+        android:text=""
         android:layout_marginTop="5dip"
         android:textColor="#ffffff"
         android:textSize="12px" />
@@ -68,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Members"
+        android:text="szu robot"
         android:textColor="#ffffff"
         android:textSize="20px" />
     </TableRow>
@@ -83,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="Mutasim Ali (穆沙) "
+        android:text=""
         android:textColor="#ffffff"
         android:textSize="15px" />
         <TextView
@@ -91,7 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="Naser Naji (纳瑟) "
+        android:text=""
         android:textColor="#ffffff"
         android:textSize="15px" />
    </TableRow>
@@ -101,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="erorr62@hotmail.com"
+        android:text=""
         android:textColor="#ffffff"
         android:textSize="12px" />
         <TextView
@@ -109,27 +95,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="n.nagi@hotmail.com"
+        android:text=""
         android:textColor="#ffffff"
         android:textSize="12px" />
    </TableRow>
           <TableRow android:layout_gravity="center_horizontal" >
-    <TextView
-        android:id="@+id/t8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:text="Mohamed Galol"
-        android:textColor="#ffffff"
-        android:textSize="15px" />
-        <TextView
-        android:id="@+id/t10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:text="Maher Saleh"
-        android:textColor="#ffffff"
-        android:textSize="15px" />
    </TableRow>
                 <TableRow android:layout_gravity="center_horizontal" >
     <TextView
@@ -137,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="galool6@hotmail.com"
+        android:text=""
         android:textColor="#ffffff"
         android:textSize="12px" />
         <TextView
@@ -145,7 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="memonero@hotmail.com"
+        android:text=""
         android:textColor="#ffffff"
         android:textSize="12px" />
    </TableRow>
